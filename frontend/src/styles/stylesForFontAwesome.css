@@ -1,0 +1,11 @@
+@media (max-width: 5000px) {
+    .fa-plus, .fa-user {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .fa-plus, .fa-user {
+        display: inline;
+        font-size: 24px;
+    }
+}

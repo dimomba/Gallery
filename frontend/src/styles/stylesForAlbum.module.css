@@ -1,0 +1,115 @@
+.photoList {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
+.header1Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 14px;
+}
+.header2Container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+}
+.header2, .header3 {
+    padding: 14px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 10px;
+}
+
+.header3Container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+}
+
+.header1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.header2, .header3 {
+    font-size: 40px;
+    transition: 0.2s;
+}
+.header2:hover, .header3:hover {
+    background-color: #cfcfcf;
+}
+
+.table1 {
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: repeat(2, 45%);
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 1900px) {
+    .header1 {
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .header2, .header3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .header1 {
+        font-size: 28px;
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+    .header2, .header3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header1 {
+        font-size: 24px;
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+    .header2, .header3 {
+        font-size: 24px;
+    }
+    .photoList {
+        column-gap: 2%;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+@media (max-width: 800px) {
+    .header1 {
+        font-size: 22px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .header2, .header3 {
+        font-size: 22px;
+    }
+    /* .photoList {
+        width: 92%;
+    } */
+}
+@media (max-width: 700px) {
+    .photoList {
+        row-gap: 20px;
+        grid-template-columns: repeat(1, 100%);
+    }
+}

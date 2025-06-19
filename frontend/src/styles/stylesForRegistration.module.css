@@ -1,0 +1,310 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+  }
+
+.formRegistration {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gridTable {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 24px;
+    column-gap: 40px;
+    justify-items: center; 
+}
+
+.header1Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 14px;
+}
+
+
+.inputboxes:focus::placeholder {
+    color: rgb(76, 76, 76);
+    transform: translateY(-25px);
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+.inputboxes:hover::placeholder {
+    color: rgb(0, 6, 52);
+}
+
+.inputboxes {
+    width: 100%;
+    height: 3em;
+    font-size: 24px;
+    padding-left: 12px;
+    border: 1px solid rgba(76, 76, 76, 0.349);
+    border-radius: 10px;
+}
+
+
+
+.btnSubmitContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.loginBtnContainer {
+    font-size: 24px;
+    margin-top: 16px;
+}
+.loginBtn {
+    padding: 12px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+.btnSubmit {
+    padding: 12px;
+    font-size: 24px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin-top: 16px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btnSubmit:hover, .loginBtn:hover {
+    background-color: #cfcfcf;
+}
+.errorMatchPasswords {
+    font-size: 24px;
+    color: rgb(184, 6, 0);
+}
+
+.header1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+
+
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    float: left;
+}
+
+
+
+@media (max-width: 1900px) {
+    .formRegistration {
+        width: 40%
+    }
+    .header1 {
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .inputboxes {
+        font-size: 20px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .btnSubmit {
+        padding: 10px;
+        font-size: 22px;
+    }
+    .loginBtnContainer {
+        font-size: 22px;
+    }
+    .loginBtn {
+        padding: 10px;
+    }
+    .errorMatchPasswords {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .gridTable {
+        row-gap: 20px;
+    }
+    .header1 {
+        font-size: 28px;
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+    .inputboxes {
+        font-size: 18px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .btnSubmit {
+        font-size: 20px;
+    }
+    .loginBtnContainer {
+        font-size: 20px;
+    }
+    .errorMatchPasswords {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .formRegistration {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .gridTable {
+        row-gap: 20px;
+    }
+    .header1 {
+        font-size: 24px;
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+    .inputboxes {
+        font-size: 16px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+    .errorMatchPasswords {
+        font-size: 16px;
+    }
+    .loginBtnContainer {
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px) {
+    .gridTable {
+        row-gap: 18px;
+    }
+    .header1 {
+        font-size: 22px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .inputboxes {
+        font-size: 16px;
+        width: 97%;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+    .formRegistration {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.logosContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width: 2560px) {
+    .logosContainer {
+        gap: 25px;
+    }
+    .logoImage{
+        width: 120px;
+        height: 120px;
+    }
+    .galleryString {
+        height: 60px;
+    }
+}
+
+@media (max-width: 2100px) {
+    .logosContainer {
+        gap: 22px;
+    }
+    .logoImage{
+        width: 100px;
+        height: 100px;
+    }
+    .galleryString {
+        height: 50px;
+    }
+}
+
+@media (max-width: 1900px) {
+    .logosContainer {
+        gap: 22px;
+    }
+    .logoImage{
+        width: 80px;
+        height: 80px;
+    }
+    .galleryString {
+        height: 40px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .logosContainer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .logoImage{
+        width: 64px;
+        height: 64px;
+    }
+    .galleryString {
+        height: 32px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .logosContainer {
+        gap: 20px;
+    }
+    .logoImage{
+        width: 64px;
+        height: 64px;
+    }
+    .galleryString {
+        height: 32px;
+    }
+}

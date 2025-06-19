@@ -1,0 +1,25 @@
+.photoList {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
+.loading {
+    margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+    .photoList {
+        column-gap: 2%;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+@media (max-width: 700px) {
+    .photoList {
+        column-gap: 2%;
+        row-gap: 20px;
+        grid-template-columns: repeat(1, 100%);
+    }
+}

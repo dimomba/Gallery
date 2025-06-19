@@ -1,0 +1,390 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 80vh; */
+  }
+
+.formRegistration {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gridTable {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 24px;
+    column-gap: 40px;
+}
+
+.header1Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 14px;
+}
+
+.header11Container, .header12Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.header2Container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+}
+.header2 {
+    padding: 14px;
+
+}
+
+.header3 {
+    padding: 14px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 10px;
+}
+
+.header3Container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+}
+
+
+.header2, .header3 {
+    font-size: 40px;
+    transition: 0.2s;
+}
+.header3:hover {
+    background-color: #cfcfcf;
+}
+
+.table1 {
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: repeat(2, 45%);
+    
+}
+
+
+.inputboxes:focus::placeholder {
+    color: rgb(76, 76, 76);
+    transform: translateY(-25px);
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+.inputboxes:hover::placeholder {
+    color: rgb(0, 6, 52);
+}
+
+.inputboxes {
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.btnSubmitContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.loginBtnContainer {
+    font-size: 24px;
+    margin-top: 16px;
+}
+.loginBtn {
+    padding: 12px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+.btnSubmit {
+    padding: 12px;
+    font-size: 24px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin-top: 16px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btnSubmit:hover, .loginBtn:hover {
+    background-color: #cfcfcf;
+}
+.errorMatchPasswords {
+    font-size: 24px;
+    color: rgb(184, 6, 0);
+}
+
+.header1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+
+.photoList {
+    width: 80%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 2px;
+    grid-auto-flow: column;
+}
+
+.publication, .header11Container {
+    grid-column: 1;
+}
+.album, .header12Container {
+    grid-column: 2;
+}
+/* .album {
+    font-size: 24px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    transition: 0.2s;
+    min-height: 70px;
+    margin: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.416);
+
+} */
+
+.album {
+    font-size: 24px;
+    /* margin-top: 5px; */
+    display: grid;
+    grid-template-rows: repeat(20%, 5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    transition: 0.2s;
+    min-height: 200px;
+    margin: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.416);
+
+}
+.album:hover {
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.403);
+    transform: scale(1.02);
+}
+
+.stringContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nameOfInput {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    float: left;
+}
+
+
+.containerOfString {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.nameOfAlbum {
+    grid-row: 3;
+    margin-top: 30px;
+}
+.containerOfLikeButton {
+    padding: 0;
+    position: relative;
+    
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-right: 20px; */
+    grid-row: 5;
+}
+.likeButton {
+    /* font-size: 40px; */
+    height: 30px;
+    color: #555;
+    transition: color 0.3s ease;
+    padding: 0;
+  }
+
+
+
+@media (max-width: 1900px) {
+    .formRegistration {
+        width: 40%
+    }
+    .header1 {
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .header2, .header3 {
+        font-size: 32px;
+    }
+    .inputboxes, .nameOfInput {
+        font-size: 20px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .btnSubmit {
+        padding: 10px;
+        font-size: 22px;
+    }
+    .loginBtnContainer {
+        font-size: 22px;
+    }
+    .loginBtn {
+        padding: 10px;
+    }
+    .errorMatchPasswords {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .gridTable {
+        row-gap: 20px;
+    }
+    .header1 {
+        font-size: 28px;
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+    .header2, .header3 {
+        font-size: 28px;
+    }
+    .inputboxes, .nameOfInput {
+        font-size: 18px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .btnSubmit {
+        font-size: 20px;
+    }
+    .loginBtnContainer {
+        font-size: 20px;
+    }
+    .errorMatchPasswords {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .formRegistration {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .gridTable {
+        row-gap: 20px;
+    }
+    .header1 {
+        font-size: 24px;
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+    .header2, .header3 {
+        font-size: 24px;
+    }
+    .inputboxes, .nameOfInput {
+        font-size: 16px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+    .errorMatchPasswords {
+        font-size: 16px;
+    }
+    .loginBtnContainer {
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px) {
+    .gridTable {
+        row-gap: 18px;
+    }
+    .header1 {
+        font-size: 22px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .header2, .header3 {
+        font-size: 22px;
+    }
+    .inputboxes {
+        font-size: 16px;
+        width: 97%;
+    }
+    .nameOfInput {
+        font-size: 16px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+    .formRegistration {
+        width: 90%;
+    }
+    .photoList {
+        width: 92%;
+    }
+}

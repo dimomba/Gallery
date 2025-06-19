@@ -1,0 +1,334 @@
+.gridTable {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    row-gap: 24px;
+    column-gap: 40px;
+}
+
+.name {
+    grid-row: 2;
+    grid-column: 2;
+}
+.tags {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.header1Container {
+    display: flex;
+    justify-content: center;
+}
+
+.photoInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 2 / 6;
+    grid-column: 1;
+}
+
+
+.inputField {
+    display: none;
+}
+.labelForButtonFile {
+    font-size: 26px;
+    background: rgb(235, 235, 235);
+    padding: 12px;
+    border-radius: 10px;
+    transition: .2s;
+}
+.labelForButtonFile:hover {
+    background: #cfcfcf;
+}
+
+
+
+.photoInputContainer img, .photoInputContainer video {
+    width: auto;
+    max-width: 100%;
+    
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.photoInputContainer input {
+    font-size: 24px;
+}
+
+.inputboxes:focus::placeholder {
+    color: rgb(76, 76, 76);
+    transform: translateY(-25px);
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+.inputboxes:hover::placeholder {
+    color: rgb(0, 6, 52);
+}
+
+.inputboxes {
+    width: 90%;
+    height: 3em;
+    font-size: 24px;
+    padding-left: 12px;
+    border: 1px solid rgba(76, 76, 76, 0.349);
+    border-radius: 10px;
+}
+
+
+
+.note {
+    width: 90%;
+    font-size: 24px;
+    height: 5em;
+    border: 1px solid rgba(76, 76, 76, 0.349);
+    padding-top: 8px;
+    padding-left: 12px;
+    color: rgb(0, 0, 0);
+    resize: none;
+    border-radius: 10px;
+    grid-row: 4 / 6;
+    grid-column: 2;
+}
+
+.btnSubmitContainer {
+    display: flex;
+    justify-content: center;
+}
+.btnSubmit {
+    padding: 12px;
+    font-size: 24px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin-top: 16px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btnSubmit:hover {
+    background-color: #cfcfcf;
+}
+
+
+.header1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.header2 {
+    font-size: 32px;
+    grid-row: 1;
+    grid-column: 1;
+}
+.header4 {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.personaldata {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.requirements {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    float: left;
+}
+
+
+
+.formUpload {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1900px) {
+    .formUpload {
+        width: 90%
+    }
+    .header1 {
+        font-size: 32px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .header2 {
+        font-size: 26px;
+    }
+    .header4 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+    .inputboxes {
+        font-size: 20px;
+    }
+    .note {
+        font-size: 20px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .labelForButtonFile {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .btnSubmit {
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .gridTable {
+        row-gap: 20px;
+        grid-template-columns: 30% 70%;
+    }
+    .header1 {
+        font-size: 28px;
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+    .header2 {
+        font-size: 22px;
+    }
+    .header4 {
+        font-size: 22px;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+    .inputboxes {
+        font-size: 18px;
+    }
+    .note {
+        font-size: 18px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-21px);
+        transition: 0.4s;
+        font-size: 13px;
+    }
+    .labelForButtonFile {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .btnSubmit {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .gridTable {
+        row-gap: 20px;
+        grid-template-columns: 40% 60%;
+    }
+    .header1 {
+        font-size: 24px;
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+    .header2 {
+        font-size: 20px;
+    }
+    .header4 {
+        font-size: 20px;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+    .inputboxes {
+        font-size: 16px;
+    }
+    .note {
+        font-size: 16px;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .labelForButtonFile {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px) {
+    .gridTable {
+        row-gap: 18px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .header1 {
+        font-size: 22px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .header2 {
+        font-size: 18px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .photoInputContainer {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .header4 {
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+    .inputboxes {
+        font-size: 16px;
+    }
+    .note {
+        font-size: 16px;
+        grid-row: 5;
+        grid-column: 1;
+        width: 97%;
+    }
+    .name {
+        grid-row: 3;
+        grid-column: 1;
+        width: 97%;
+    }
+    .tags {
+        grid-row: 4;
+        grid-column: 1;
+        width: 97%;
+    }
+    .inputboxes:focus::placeholder {
+        color: rgb(76, 76, 76);
+        transform: translateY(-19px);
+        transition: 0.4s;
+        font-size: 11px;
+    }
+    .labelForButtonFile {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .btnSubmit {
+        font-size: 18px;
+    }
+    .formUpload {
+        width: 95%;
+    }
+}

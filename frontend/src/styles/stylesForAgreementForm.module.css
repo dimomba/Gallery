@@ -1,0 +1,40 @@
+.termsText {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.labelOfCheckbox {
+    margin-bottom: 16px;
+}
+
+.button {
+    font-size: 18px;
+}
+
+.button {
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    height: 32px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    transition: .2s;
+    border: none;
+    margin-bottom: 24px;
+}
+.button:hover {
+    background: #cfcfcf;
+    transition: .2s;
+}
